@@ -7,8 +7,8 @@ function Header({
 }) {
     return (
         <Flex
-            px="4"
-            py="4"
+            px="8"
+            py="8"
             justify="space-between"
         >
             <Text
@@ -21,9 +21,9 @@ function Header({
 
             <Flex align="end">
                 <Button
-                    size="sm"
+                    size="md"
                     variant="outline"
-                    variantColor="blue"
+                    colorScheme="teal"
                     isLoading={isUploading}
                     loadingText="Uploading..."
                 >
