@@ -2,8 +2,8 @@ import React from 'react';
 import { Flex, Button, Text } from '@chakra-ui/react';
 
 function Header({
-    isUploading = false,
-    onPhotoSelect,
+    isUploading = false, //state of the upload button
+    onPhotoSelect, //will be triggered when user selects a new photo to upload
 }) {
     return (
         <Flex
@@ -23,7 +23,7 @@ function Header({
                 <Button
                     size="md"
                     variant="outline"
-                    colorScheme="teal"
+                    colorScheme="blue"
                     isLoading={isUploading}
                     loadingText="Uploading..."
                 >
